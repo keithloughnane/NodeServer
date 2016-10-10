@@ -22,3 +22,7 @@
 17:25   I'm still studying node.js but I set up the repos while watching vids.
 
         I think I understand routes now.
+
+
+        wasted a bit of time by typing app.local.locations rather than app.localS.locations
+        wasted more time by not realising I had to restart the server.

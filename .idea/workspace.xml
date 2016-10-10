@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97413415-f9c6-4626-8b30-a251c13ef453" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/activeLocations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/getDistance.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestLog.txt" afterPath="$PROJECT_DIR$/TestLog.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="NodeServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,26 +21,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="435">
-                    <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="NodeServer" />
@@ -51,8 +30,8 @@
       <file leaf-file-name="TestLog.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestLog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="405">
+              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -61,8 +40,28 @@
       <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8903">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="9255">
+              <caret line="617" column="3" selection-start-line="617" selection-start-column="3" selection-end-line="617" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,18 +70,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activeLocations.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/activeLocations.js">
+      <file leaf-file-name="getDistance.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/getDistance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="135">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -90,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getDistance.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/getDistance.js">
+      <file leaf-file-name="activeLocations.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/activeLocations.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -127,11 +126,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TestLog.txt" />
         <option value="$PROJECT_DIR$/routes/getDistanace.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/activeLocations.js" />
         <option value="$PROJECT_DIR$/routes/getDistance.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/TestLog.txt" />
       </list>
     </option>
   </component>
@@ -147,10 +147,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="25" />
-    <option name="width" value="640" />
-    <option name="height" value="773" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -263,6 +261,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="6.7.0" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Node.js.bin/www">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -326,23 +325,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476108764709</updated>
-      <workItem from="1476108766316" duration="1011000" />
+      <workItem from="1476108766316" duration="2830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1011000" />
+    <option name="totallyTimeSpent" value="2830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="25" width="640" height="773" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30810094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -380,38 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8903">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestLog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -420,13 +387,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/activeLocations.js">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9255">
+          <caret line="617" column="3" selection-start-line="617" selection-start-column="3" selection-end-line="617" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestLog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -434,6 +431,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/activeLocations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
