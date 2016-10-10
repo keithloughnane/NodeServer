@@ -1,20 +1,24 @@
-15:24 Starting
-	Don’t know Node.JS at all so need to take some time to learn enough to start and to get set up.
+15:24   Starting
+	    Don’t know Node.JS at all so need to take some time to learn enough to start and to get set up.
 
-	My first priority should be just getting requests answered, as I’m new to this I think if I can get that far I’ll be doing ok. After that I should make progress on the server quickly.
+	    My first priority should be just getting requests answered, as I’m new to this I think if I can get that far I’ll be doing ok. After that I should make progress on the server quickly.
 
-16:14 poking around, just setting up the environment and watching tutorials. Found web storm that seemed to set the environment up for me. Perhaps set too much stuff up for me, emailed Mikk to see if that’s considered cheating.
+16:14   poking around, just setting up the environment and watching tutorials. Found web storm that seemed to set the environment up for me. Perhaps set too much stuff up for me, emailed Mikk to see if that’s considered cheating.
 
-The environment remains me a bit of ruby on rails.
+        The environment remains me a bit of ruby on rails.
 
-16:35 Mikk emailed back, doesn’t mind if I use it as long as I understand. I might take the time to explain the parts later to show I do understand.
-At the moment I could just about pull this off with a single file using (rough pseudocode)
+16:35   Mikk emailed back, doesn’t mind if I use it as long as I understand. I might take the time to explain the parts later to show I do understand.
+        At the moment I could just about pull this off with a single file using (rough pseudocode)
 
-if (request = “/getDistance”)
-	getDistance()
-if(request = “/getActiveLocations”)
-	getActiveLocations()
+        if (request = “/getDistance”)
+	        getDistance()
+        if(request = “/getActiveLocations”)
+	        getActiveLocations()
 
-But it would force clients to wait, one of the advantages of Node.js is that your don’t have to do that and the routing wouldn’t be very good.
+        But it would force clients to wait, one of the advantages of Node.js is that your don’t have to do that and the routing wouldn’t be very good.
 
-17:08 Set up Repos. And committed this log.
+17:08   Set up Repos. And committed this log.
+
+17:25   I'm still studying node.js but I set up the repos while watching vids.
+
+        I think I understand routes now.
