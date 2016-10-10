@@ -7,17 +7,58 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/:coords', function(req, res, next) {
 
+    /* Eample URL
+     http://127.0.0.1:3000/getDistance/coords%7B%22point1%22:%20%7B%22lat%22:%2026.4325,%22lng%22:%2051.3345%7D,%22point2%22:%20%7B%22lat%22:%2026.4444,%22lng%22:%2051.2633%7D%7D
+     */
 
-    console.log(req.params.coords);
+
+
+    /*
+    Input Example
+
+     {
+     "point1": {
+     "lat": 26.4325,
+     "lng": 51.3345
+     },
+     "point2": {
+     "lat": 26.4444,
+     "lng": 51.2633
+     }
+     }
+
+     */
+    var rawJSON = req.params.coords.toString();
+
+    rawJSON = rawJSON.toString().substring(6);
+
+    console.log("coords > " + rawJSON);
     //res.send('activeLocations');
 
-    var dist = distance(26.4325,51.3345,26.4444,51.2633,"K")
-    console.log(dist + "KM");
+    var paramArray = JSON.parse(rawJSON);
+    console.log("Recieved P1Lat : " + paramArray.point1.lat + "P1Long" +  paramArray.point1.lng  +  "P2Lat" + paramArray.point2.lat + "P2Long" + paramArray.point2.lng);
 
 
-    //locations = require('../data.json');
 
-    //res.send(JSON.stringify(locations));
+    var distance = calcDistance(paramArray.point1.lat,paramArray.point1.lng,paramArray.point2.lat ,paramArray.point2.lng,"K")
+    console.log(distance + "KM");
+
+
+    distance = (distance *1000).toFixed(2); // we want Meters and only two decimal places like the example.
+
+    varDistArray = {"distance" : distance },
+
+    res.send(JSON.stringify(varDistArray));
+
+
+/* Example response
+    {
+        "distance": 7211.49
+    }
+*/
+
+
+
 
 
 
@@ -27,7 +68,7 @@ router.get('/:coords', function(req, res, next) {
 I got this from http://www.geodatasource.com
  */
 
-function distance(lat1, lon1, lat2, lon2, unit) {
+function calcDistance(lat1, lon1, lat2, lon2, unit) {
     var radlat1 = Math.PI * lat1/180
     var radlat2 = Math.PI * lat2/180
     var theta = lon1-lon2

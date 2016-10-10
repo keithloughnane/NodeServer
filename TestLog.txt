@@ -43,3 +43,8 @@
         I had no experience in Node.js or not much in Javascript before this but I did have experience in Java and Ruby
         on Rails which helped a lot. Taking a break...
 
+21:41   Back to work.
+
+22:42   Spent way too long trying to fix a problem that didn't exist, I had the wrong test data in the url.
+        Anyway the distance calculation works. Needs to be cleaned up a bit and needs boiler plate to throw errors.
+        but it's working.

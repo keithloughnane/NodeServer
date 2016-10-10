@@ -20,13 +20,9 @@ router.get('/:date', function(req, res, next) {
             {
                 locations.splice(index, 1)
             }
-
         }
     );
 
-
     res.send(JSON.stringify(locations));
-
 });
-
 module.exports = router;
