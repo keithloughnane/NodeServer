@@ -14,7 +14,7 @@ var getDistance = require('./routes/getDistance')
 
 var app = express();
 
-app.locals.locations = require('./data.json');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

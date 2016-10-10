@@ -26,3 +26,11 @@
 
         wasted a bit of time by typing app.local.locations rather than app.localS.locations
         wasted more time by not realising I had to restart the server.
+
+18:18   Back to study for a while.
+
+       Changed my mind. Decided to move require for data.json to activeLocations.
+       It now passes the whole array back. No processing yet, just trying to get it taking arguments
+       and passing json back.
+
+       
