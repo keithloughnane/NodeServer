@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="97413415-f9c6-4626-8b30-a251c13ef453" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestLog.txt" afterPath="$PROJECT_DIR$/TestLog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/getDistance.js" afterPath="$PROJECT_DIR$/routes/getDistance.js" />
     </list>
     <ignored path="NodeServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/TestLog.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+              <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -323,12 +322,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476108764709</updated>
-      <workItem from="1476108766316" duration="22418000" />
+      <workItem from="1476108766316" duration="22666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22418000" />
+    <option name="totallyTimeSpent" value="22666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="849" height="773" extended-state="0" />
@@ -464,7 +463,7 @@
     <entry file="file://$PROJECT_DIR$/TestLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
           <folding />
         </state>
       </provider>

@@ -82,4 +82,5 @@
         but looking at the example
         "error": "point2 must be js object with lat and lng params"
         I took this to mean it would show where specifically the error was and not just give a generic error.
-        
+
+01:32   Taking a break. See Android project for the rest of this log.
