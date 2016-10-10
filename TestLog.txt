@@ -33,4 +33,13 @@
        It now passes the whole array back. No processing yet, just trying to get it taking arguments
        and passing json back.
 
-       
+19:49   Was doing R&D on passing in and out data. Got passing in date working. Passing in JSON might be trickier.
+
+        Did a quick test. Passing in JSON in the URL works but feels wrong.
+        I don't have a good reason to not do it that way though.
+
+20:19   I've figured out the sticking points in Node.js. The routing, passing in an out arguments, working with data
+        etc is working I think I only need to connect the peices now.
+        I had no experience in Node.js or not much in Javascript before this but I did have experience in Java and Ruby
+        on Rails which helped a lot. Taking a break...
+
