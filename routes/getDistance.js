@@ -27,8 +27,68 @@ var router = express.Router();
 
 router.get('/:coords', function(req, res, next)
 {
-    var rawJSONInput = req.params.coords.toString().substring(6);
-    var paramArray = JSON.parse(rawJSONInput);
+
+    try
+    {
+        var rawJSONInput = req.params.coords.toString().substring(6);
+        var paramArray = JSON.parse(rawJSONInput);
+
+        if (typeof paramArray == "object")
+        {
+            if(typeof paramArray.point1 == "object")
+            {
+                if(typeof paramArray.point1.lng == "number" && typeof paramArray.point1.lat == "number")
+                {
+                    if(paramArray.point1.lng < 0 || paramArray.point1.lng > 180 || paramArray.point1.lat < 0 || paramArray.point1.lat > 180 )
+                    {
+                        res.send(formatError("Point1 lng or lat is not sane make sure the are >0 and <180"));
+                        return;
+                    }
+                }
+                else
+                {
+                    res.send(formatError("Point1 lng or lat is not a valid number"));
+                    return;
+                }
+            }
+            else {
+                res.send(formatError("JSON is not valid Point1 is not a valid object"));
+                return;
+            }
+            if(typeof paramArray.point2 == "object" )
+            {
+                if(typeof paramArray.point2.lng == "number" && typeof paramArray.point2.lat == "number")
+                {
+                    if(paramArray.point2.lng < 0 || paramArray.point2.lng > 180 || paramArray.point2.lat < 0 || paramArray.point2.lat > 180 )
+                    {
+                        res.send(formatError("Point2 lng or lat is not sane make sure the are >0 and <180"));
+                        return;
+                    }
+                }
+                else {
+                    res.send(formatError("Point2 lng or lat is not a valid number"));
+                    return;
+                }
+            }
+            else {
+                res.send(formatError("JSON is not valid Point2 is not a valid object"));
+                return;
+            }
+        }
+        else
+        {
+            res.send(formatError("JSON is not valid"));
+            return;
+        }
+    }
+    catch (err)
+    {
+        res.send(formatError("input error > " +err));
+        return;
+    }
+
+
+
     var distance = calcDistance(paramArray.point1.lat,paramArray.point1.lng,paramArray.point2.lat ,paramArray.point2.lng,"K")
 
     //console.log("Recieved P1Lat : " + paramArray.point1.lat + "P1Long" +  paramArray.point1.lng  +  "P2Lat" + paramArray.point2.lat + "P2Long" + paramArray.point2.lng);
@@ -39,6 +99,21 @@ router.get('/:coords', function(req, res, next)
 
     res.send(JSON.stringify(varDistArray));
 });
+
+
+function formatError(errorMessage)
+{
+    /* Example Error
+     {
+     "error": "point2 must be js object with lat and lng params"
+     }
+     */
+    //console.log(errorMessage);
+    error = {"error": errorMessage};
+
+    return error;
+    //it wouldn't let me res.send from here.
+}
 
 /*
 I got this from http://www.geodatasource.com

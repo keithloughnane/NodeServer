@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97413415-f9c6-4626-8b30-a251c13ef453" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/activeLocations.js" afterPath="$PROJECT_DIR$/routes/activeLocations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestLog.txt" afterPath="$PROJECT_DIR$/TestLog.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/getDistance.js" afterPath="$PROJECT_DIR$/routes/getDistance.js" />
     </list>
     <ignored path="NodeServer.iws" />
@@ -49,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestLog.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestLog.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestLog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+            <state relative-caret-position="414">
+              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -62,18 +59,18 @@
       <file leaf-file-name="activeLocations.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/activeLocations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+            <state relative-caret-position="600">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getDistance.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getDistance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/getDistance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="174">
+              <caret line="107" column="7" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="64" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -128,10 +125,10 @@
       <list>
         <option value="$PROJECT_DIR$/routes/getDistanace.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/TestLog.txt" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/activeLocations.js" />
         <option value="$PROJECT_DIR$/routes/getDistance.js" />
+        <option value="$PROJECT_DIR$/TestLog.txt" />
       </list>
     </option>
   </component>
@@ -326,12 +323,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476108764709</updated>
-      <workItem from="1476108766316" duration="19526000" />
+      <workItem from="1476108766316" duration="22418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19526000" />
+    <option name="totallyTimeSpent" value="22418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="849" height="773" extended-state="0" />
@@ -422,14 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestLog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -456,19 +445,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/activeLocations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        <state relative-caret-position="600">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/getDistance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        <state relative-caret-position="174">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="64" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestLog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

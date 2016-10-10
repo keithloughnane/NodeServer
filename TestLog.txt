@@ -74,3 +74,12 @@
         1457604000000
 
 00:15   It's working now. Added some boilerplate, dropped the foreach loop for an old fassioned while loop.
+
+00:55   working on boiler plate. Maybe I should move onto the android bid and come back to finish it off but I
+        Like to focus on one thing.
+
+01:26   I added boilerplate to getDistance. The errors are probably too detailed and there is probably too much code
+        but looking at the example
+        "error": "point2 must be js object with lat and lng params"
+        I took this to mean it would show where specifically the error was and not just give a generic error.
+        
