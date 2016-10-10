@@ -48,3 +48,29 @@
 22:42   Spent way too long trying to fix a problem that didn't exist, I had the wrong test data in the url.
         Anyway the distance calculation works. Needs to be cleaned up a bit and needs boiler plate to throw errors.
         but it's working.
+
+23:11   Pasing and conveting to unix time works
+
+        Ad hoc test data
+        2016-08-10 12:00:00 should pass the first entry, throw and error on the second and fail the third one
+ aka    1470819600
+
+        2016-03-10 12:00:00 should fail 1st one, error on 2nd, pass 3rd.
+ aka    1457604000
+
+23:33  Getting a very wreird error where I'm getting debug log output for ONLY the time entries
+        with even number ID's. And only getting web browser output from entries with odd numbers.
+
+        It's like my if statement is being ignored and it's running older code.
+
+23:52  Figured it out. What happened was my test data didn't include miliseconds so it was failing on
+        every pass. But what was also happening was I was removing elements from the array so each time
+        I removed an element and the array got shorter by one and each elements index was reduced by one.
+        The result was all the odd numbered ID was removed and the Even numbers was left. Rookie mistake!
+
+        I'm going to add boiler plate now to fix this and come up with a way of fixing the array problem.
+
+        1457604000
+        1457604000000
+
+00:15   It's working now. Added some boilerplate, dropped the foreach loop for an old fassioned while loop.
