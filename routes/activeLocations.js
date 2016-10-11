@@ -26,7 +26,7 @@ router.get('/:date', function(req, res, next) {
         console.log("Created > " + testCRDate);
         console.log("Date > " + currentDate);
         console.log("Disabled > " + testDSDate);
-        if (testCRDate < currentDate && testDSDate > currentDate) {
+        if ((testCRDate != null && testDSDate != null) && testCRDate < currentDate && testDSDate > currentDate) {
             //console.log((testCRDate < currentDate).toString() + "," + (testDSDate > currentDate).toString());
             console.log("Passed Test, keeping");
             i++;
@@ -38,6 +38,13 @@ router.get('/:date', function(req, res, next) {
             //Don't increment of removing the whole array drops down by one which results in more or less the same effect.
         }
     }
+    writeToLogFile("Returning " + JSON.stringify(locations));
     res.send(JSON.stringify(locations));
 });
+
+function writeToLogFile(message)
+{
+    var fs = require('fs');
+    fs.appendFile("log.txt",message,null);
+}
 module.exports = router;
