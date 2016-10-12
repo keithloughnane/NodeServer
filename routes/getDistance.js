@@ -38,43 +38,43 @@ router.get('/:coords', function (req, res, next) {
             if (typeof paramArray.point1 == "object") {
                 if (typeof paramArray.point1.lng == "number" && typeof paramArray.point1.lat == "number") {
                     if (paramArray.point1.lng < 0 || paramArray.point1.lng > 180 || paramArray.point1.lat < 0 || paramArray.point1.lat > 180) {
-                        res.send(formatError("Point1 lng or lat is not sane make sure the are >0 and <180"));
+                        writeAndReturn(res, "RETURNING > ",  formatError("Point1 lng or lat is not sane make sure the are >0 and <180"));
                         return;
                     }
                 }
                 else {
-                    res.send(formatError("Point1 lng or lat is not a valid number"));
+                    writeAndReturn(res, "RETURNING > ",  formatError("Point1 lng or lat is not a valid number"));
                     return;
                 }
             }
             else {
-                res.send(formatError("JSON is not valid Point1 is not a valid object"));
+                writeAndReturn(res, "RETURNING > ",  formatError("JSON is not valid Point1 is not a valid object"));
                 return;
             }
             if (typeof paramArray.point2 == "object") {
                 if (typeof paramArray.point2.lng == "number" && typeof paramArray.point2.lat == "number") {
                     if (paramArray.point2.lng < 0 || paramArray.point2.lng > 180 || paramArray.point2.lat < 0 || paramArray.point2.lat > 180) {
-                        res.send(formatError("Point2 lng or lat is not sane make sure the are >0 and <180"));
+                        writeAndReturn(res, "RETURNING > ",  formatError("Point2 lng or lat is not sane make sure the are >0 and <180"));
                         return;
                     }
                 }
                 else {
-                    res.send(formatError("Point2 lng or lat is not a valid number"));
+                    writeAndReturn(res, "RETURNING > ",  formatError("Point2 lng or lat is not a valid number"));
                     return;
                 }
             }
             else {
-                res.send(formatError("JSON is not valid Point2 is not a valid object"));
+                writeAndReturn(res, "RETURNING > ",  formatError("JSON is not valid Point2 is not a valid object"));
                 return;
             }
         }
         else {
-            res.send(formatError("JSON is not valid"));
+            writeAndReturn(res, "RETURNING > ",  formatError("JSON is not valid"));
             return;
         }
     }
     catch (err) {
-        res.send(formatError("input error > " + err));
+        writeAndReturn(res, "RETURNING > ",  formatError("input error > " + err));
         return;
     }
 
@@ -87,8 +87,8 @@ router.get('/:coords', function (req, res, next) {
     distance = (distance * 1000).toFixed(2); // we want Meters and only two decimal places like the example.
     varDistArray = {"distance": distance};
 
-    writeToLogFile("Returning " + JSON.stringify(varDistArray));
-    res.send(JSON.stringify(varDistArray));
+    //writeToLogFile("Returning " + JSON.stringify(varDistArray));
+    writeAndReturn(res, "RETURNING > ",  JSON.stringify(varDistArray));
 });
 
 
@@ -127,9 +127,26 @@ function calcDistance(lat1, lon1, lat2, lon2, unit) {
     return dist
 }
 
+function writeAndReturn(res, logMessage, data)
+{
+    writeToLogFile(logMessage + "\n********************************************\n" + data.toString());
+    res.send(data);
+}
+
 function writeToLogFile(message)
 {
+    var currentdate = new Date();
+    var datetime = currentdate.getDate() + "/"
+        + (currentdate.getMonth()+1)  + "/"
+        + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":"
+        + currentdate.getSeconds();
+
+
     var fs = require('fs');
-    fs.appendFile("log.txt",message,null);
+    //String slog = datetime + ">" + message + "\n"
+    console.log(datetime + ">" + message + "\n");
+    fs.appendFile("log.txt",datetime + ">" + message + "\n",null);
 }
 module.exports = router;

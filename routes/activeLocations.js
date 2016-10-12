@@ -7,7 +7,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/:date', function(req, res, next) {
     //Takes UNIX Time, returns active locations (between startTime and expireTime)
-
+    writeToLogFile("activeLocations parsing " + req.params.date.toString())
     //Take and process perameters
     var currentDate = parseInt(req.params.date.toString().substring(4));
     while (currentDate < 1000000000000) //Make sure milliseconds are included
@@ -38,13 +38,30 @@ router.get('/:date', function(req, res, next) {
             //Don't increment of removing the whole array drops down by one which results in more or less the same effect.
         }
     }
-    writeToLogFile("Returning " + JSON.stringify(locations));
-    res.send(JSON.stringify(locations));
+    //writeToLogFile("Returning " + JSON.stringify(locations));
+    writeAndReturn(res, "RETURNING > ",  JSON.stringify(locations));
 });
+
+function writeAndReturn(res, logMessage, data)
+{
+    writeToLogFile(logMessage + "\n********************************************\n" + data)
+    res.send(data);
+}
 
 function writeToLogFile(message)
 {
+    var currentdate = new Date();
+    var datetime = "Last Sync: " + currentdate.getDate() + "/"
+        + (currentdate.getMonth()+1)  + "/"
+        + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":"
+        + currentdate.getSeconds();
+
+
     var fs = require('fs');
-    fs.appendFile("log.txt",message,null);
+    //String slog = datetime + ">" + message + "\n"
+    console.log(datetime + ">" + message + "\n");
+    fs.appendFile("log.txt",datetime + ">" + message + "\n",null);
 }
 module.exports = router;
